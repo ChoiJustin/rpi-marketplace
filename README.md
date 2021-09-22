@@ -5,3 +5,5 @@ To begin Application: </br>
 Clone repo </br>
 cd to rpi-marketplace/client </br>
 npm start <br>
+cd to rpi-marketplace/server </br>
+npm start <br>
