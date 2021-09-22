@@ -2,6 +2,6 @@
 "A Marketplace for students, by students"
 
 To begin Application: </br>
-Clone repo
-cd to rpi-marketplace/client
-npm start
+Clone repo </br>
+cd to rpi-marketplace/client </br>
+npm start <br>
