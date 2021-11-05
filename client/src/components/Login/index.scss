@@ -1,6 +1,6 @@
 .Login {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   position: absolute;
 
   left: 0;
@@ -12,7 +12,22 @@
   z-index: 0;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   align-self: center;
+
+  &__Form {
+    width: 50vw;
+  }
+}
+
+#Logo {
+  width: 50%;
+}
+
+.text {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Bungee";
 }
