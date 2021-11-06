@@ -20,6 +20,12 @@ const Register = () => {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({username: `${user}`, password: `${pass}`})
+    })
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      console.log(data);
     });
 }
 
