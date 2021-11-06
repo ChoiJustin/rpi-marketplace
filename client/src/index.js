@@ -4,14 +4,14 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import "./index.scss";
 
-import Login from './components/Login';
+import Register from './components/Register';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
 	<React.StrictMode>
 		<Router>
 			<Switch>
-				<Route exact path="/login" component={Login} />
+				<Route exact path="/register" component={Register} />
 			</Switch>
 		</Router>
 	</React.StrictMode>,

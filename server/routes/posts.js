@@ -1,4 +1,4 @@
-import express from 'express'
+import express, { request } from 'express'
 import postMessage from '../models/postMessages.js'
 import User from '../models/Users.js'
 
@@ -18,19 +18,20 @@ router.get('/post', async (req, res) => {
 })
 
 var users
-async function newUser() {
+async function newUser(user, pass) {
     const User1 = new User({
-        username: 'daniel1@rpi.edu',
-        password: 'mypassword123',
+        username: user,
+        password: pass,
     })
     await User1.save()
     users = await User.find()
 }
 
-router.get('/users', (req, res) => {
-    newUser()
-    res.send(users)
-})
+router.post('/users', (req, res) => {
 
-router.post('/post', (req, res) => {})
+    let user = req.body.username;
+    let pass = req.body.password;
+    newUser(user, pass);
+    res.send(users);
+})
 export default router
