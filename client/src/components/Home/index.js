@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from '../images/Logo.png';
+import Logo from '../../images/Logo.png';
 
 
 import {Form, Button} from 'react-bootstrap';

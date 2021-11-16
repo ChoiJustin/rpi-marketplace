@@ -4,9 +4,9 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import "./index.scss";
 
-import Home from './components';
+import Home from './components/Home';
 import Register from './components/Register';
-import NavBar from './components/NavBar';
+import NavBar from './components/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(

@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import './NavBar.css';
-import { Link } from '../../node_modules/react-router-dom';
+import React from 'react';
+import './index.scss';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => (
     <header className="navbar">
