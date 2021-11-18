@@ -4,10 +4,10 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import "./index.scss";
 
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/Home';
 import Register from './components/Register';
 import NavBar from './components/Navbar';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
 	<React.StrictMode>

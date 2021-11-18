@@ -4,11 +4,12 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     height: 5vh;
+    padding-top: 0rem;
 
     &__navigation {
         display: flex;
         align-items:center;
-        height: 100%;
+        height: inherit;
         width: 100%;
         
 
@@ -21,7 +22,7 @@
             padding-right: 10px;
             text-decoration: none;
             color: #F7EECD;
-            font-size: 3vh;
+            font-size: 2.5vh;
             
         }
 
