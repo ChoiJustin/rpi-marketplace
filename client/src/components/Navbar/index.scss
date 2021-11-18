@@ -1,69 +1,32 @@
-.navbar{
+.navbar {
     z-index: 100;
-    position:flex;
     background-color: red;
-}
-.navbar_navigation{
-    display: flex;
-    align-items:center;
-    height: 6vw;
-    width: 100%;
-}
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 5vh;
 
-.navBar_logo a{
-    color: #F7EECD;
-    text-decoration: none;
-    font-size: 3vw;
-    font-weight: 300;
-    padding-left: 40%;
-}
+    &__navigation {
+        display: flex;
+        align-items:center;
+        height: 100%;
+        width: 100%;
+        
 
-.navbar_items a{
-    color: #F7EECD;
-    text-decoration: none;
-}
+        &__title {
+            padding-left: 10px;
+            text-decoration: none;
+        }
+        
+        &__link {
+            padding-right: 10px;
+            text-decoration: none;
+            color: #F7EECD;
+            font-size: 3vh;
+            
+        }
 
-.spacer{
-    flex: .9;
-}
-
-.navbar_items ul{
-    list-style: none;
-    display: flex;
-    font-size: 1.5vw;
-    font-weight: 300; 
-}
-
-.navbar_items li{
-    margin:1.5em;
-}
-
-.Item1:hover{
-
-    font-weight: 500;
-    margin-right: 1.4em;
-}
-
-.Item2:hover{
-    font-weight: 500;
-    margin-left: 1.38em;
-    margin-right: 1.38em;
-}
-
-.Item3:hover{
-    font-weight: 500;
-    margin-left: 1.39em;
-    margin-right: 1.38em;
-}
-
-.Item4:hover{
-    font-weight: 500;
-    margin-left: 1.37em;
-    margin-right: 1.36em;
-}
-
-.Item5:hover{
-    font-weight: 500;
-    margin-left: 1.37em;
-    margin-right: 1.36em;
+        &__spacer {
+            flex: 1;
+        }
+    }
 }
