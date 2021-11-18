@@ -6,10 +6,12 @@ import {Form, Button} from 'react-bootstrap';
 import './index.scss';
 
 const Register = () => {
+  //Hooks that hold the current Username & Password
   const [user, setUsername] = useState("");
   const [pass, setPassword] = useState("");
 
 
+  //Fetches the Current User from the Backend API when submit is clicked
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -26,7 +28,13 @@ const Register = () => {
     })
     .then((data) => {
       console.log(data);
-    });
+    })
+    .catch((e) =>
+    console.log(e));
+
+    //Clears the current Username and Password
+    setUsername("");
+    setPassword("");
 }
 
 
