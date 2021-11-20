@@ -1,0 +1,58 @@
+.navbar {
+    z-index: 100;
+    background-color: red;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 5vh;
+    padding-top: 0rem;
+
+    &__navigation {
+        display: flex;
+        align-items: center;
+        height: inherit;
+        width: 100%;
+
+        &__title {
+            padding-left: 10px;
+            text-decoration: none;
+        }
+
+        &__spacer {
+            flex: 1;
+        }
+
+        &__items {
+            display: flex;
+            flex-direction: column;
+            top: 0;
+            right: 0;
+            position: absolute;
+        }
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+._link {
+    padding-right: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 2.5vh;
+}
+
+._link:hover {
+    color: #f7eecd;
+}
+
+.accountList {
+    display: flex;
+    flex-direction: column;
+}
+
+.option {
+    height: 5vh;
+    text-align: center;
+    line-height: 5vh;
+}
