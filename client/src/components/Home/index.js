@@ -5,11 +5,12 @@ import { Form, Button } from 'react-bootstrap'
 import './index.scss'
 
 const Home = () => {
-    const [user, setUsername] = useState('')
+    const [search, setsearch] = useState('')
 
     const handleSubmit = (e) => {}
 
     return (
+        //Home page
         <div className={'Home'}>
             <img src={Logo} alt="" id={'Logo'} />
             <div className={'text'}> RPI MARKETPLACE </div>
@@ -18,13 +19,13 @@ const Home = () => {
                 "A marketplace for students, by students"{' '}
             </div>
             <div>
-                <Form className={'Home__Form'}>
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form className={'Search__Form'}>
+                    <Form.Group className="mb-3" controlId="formBasicSearch">
                         <Form.Control
                             type="text"
                             placeholder="Search for"
-                            value={user}
-                            onChange={(e) => setUsername(e.target.value)}
+                            value={search}
+                            onChange={(e) => setsearch(e.target.value)}
                         />
                     </Form.Group>
 
