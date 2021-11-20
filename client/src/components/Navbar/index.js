@@ -4,16 +4,22 @@ import { Link } from 'react-router-dom'
 import './index.scss'
 
 const NavBar = () => {
+    //State Hooks that stores if the user is logged in through cookies
     const [isLogged, setLogged] = useState(
         JSON.parse(localStorage.getItem('isLogged'))
     )
+
+    //State that keeps track of when the NavBar is on or off
     const [nav, setNav] = useState(false)
 
+    //Signs out by removing the cookie and refreshing to see those changes
     const SignOut = () => {
         localStorage.setItem('isLogged', null)
         window.location.reload()
     }
 
+    //The dropdown part of the navbar that appears when the settings button is pressed
+    //Conditionally renders depending on whether or not the user is logged in
     const AccountList = () => {
         return (
             <div>
@@ -46,7 +52,7 @@ const NavBar = () => {
             </div>
         )
     }
-
+    
     return (
         <div className="navbar">
             <nav className="navbar__navigation">
