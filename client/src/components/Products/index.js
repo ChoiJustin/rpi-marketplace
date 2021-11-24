@@ -1,7 +1,6 @@
 import React from 'react'
-import Textbook from '../../images/Logo.png'
+import Textbook from '../../images/Textbook.png'
 import './index.scss'
-
 
 const Product = () => {
     return (
@@ -13,7 +12,7 @@ const Product = () => {
                     <strong>29.99</strong>
                 </p>
             </div>
-            <img src={Textbook} alt='' id={'textbook'} />
+            <img src={Textbook} alt="" id={'textbook'} />
             <button> Buy Now </button>
         </div>
     )

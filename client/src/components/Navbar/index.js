@@ -28,7 +28,7 @@ const NavBar = () => {
                         {' '}
                         <Link
                             className={`_link option ${nav ? '' : 'hidden'}`}
-                            to="/Posts"
+                            to="/posts"
                         >
                             Posts
                         </Link>
@@ -52,7 +52,7 @@ const NavBar = () => {
             </div>
         )
     }
-    
+
     return (
         <div className="navbar">
             <nav className="navbar__navigation">
