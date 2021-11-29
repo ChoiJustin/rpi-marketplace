@@ -6,13 +6,14 @@ const Product = () => {
     return (
         <div className={'product'}>
             <div className={'product_info'}>
-                <p>Intro to SOLID Design Principles</p>
+                <p>The Lean Startup</p>
                 <p className={'product_price'}>
-                    <small>$</small>
-                    <strong>29.99</strong>
+                    <small>
+                    <strong>$29.99</strong>
+                    </small>
                 </p>
             </div>
-            <img src={Textbook} alt="" id={'textbook'} />
+            <img src='https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400.jpg' alt=""/>
             <button> Buy Now </button>
         </div>
     )
