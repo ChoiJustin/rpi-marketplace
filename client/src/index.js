@@ -10,6 +10,7 @@ import Home from './components/Home'
 import Register from './components/Register'
 import NavBar from './components/Navbar'
 import logo from './images/Homelogo.png'
+import Product from './components/Products'
 
 const handleNewUserMessage = (newMessage) => {
     console.log(`New Marketplace message! ${newMessage}`)
@@ -24,6 +25,7 @@ ReactDOM.render(
                 <Switch>
                     <Route exact path="/" component={Home} />
                     <Route exact path="/register" component={Register} />
+                    <Route exact path="/posts" component={Product} />
                 </Switch>
             </div>
         </Router>
