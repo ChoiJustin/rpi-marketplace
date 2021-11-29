@@ -46,7 +46,7 @@ const NavBar = () => {
                         onClick={() => setNav(false)}
                         to="/Register"
                     >
-                        Sign In
+                        Register
                     </Link>
                 )}
             </div>
