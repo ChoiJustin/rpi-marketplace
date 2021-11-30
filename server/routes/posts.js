@@ -23,16 +23,15 @@ async function newUser(user, pass) {
         username: user,
         password: pass,
     })
-    await User1.save()
+    if (user != '' && pass != '') await User1.save()
     users = await User.find()
 }
 
 router.post('/users', (req, res) => {
+    let user = req.body.username
+    let pass = req.body.password
+    newUser(user, pass)
 
-    let user = req.body.username;
-    let pass = req.body.password;
-    newUser(user, pass);
-
-    res.send(users);
+    res.send(users)
 })
 export default router
