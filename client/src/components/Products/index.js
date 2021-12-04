@@ -6,7 +6,8 @@ const Product = () => {
     return (
         <div className={'product'}>
             <div className={'product_info'}>
-                <p>The Lean Startup</p>
+                <p>The Lean Startup</p>                
+                <p>Used</p>
                 <p className={'product_price'}>
                     <small>
                     <strong>$29.99</strong>
