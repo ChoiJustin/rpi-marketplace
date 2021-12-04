@@ -11,6 +11,7 @@ import Register from './components/Register'
 import NavBar from './components/Navbar'
 import logo from './images/Homelogo.png'
 import Posts from './components/Posts'
+import SignIn from './components/SignIn'
 
 const handleNewUserMessage = (newMessage) => {
     console.log(`New Marketplace message! ${newMessage}`)
@@ -23,7 +24,7 @@ ReactDOM.render(
                 <NavBar />
                 <Chat profilepicture={logo} title="RPI Marketplace" />
                 <Switch>
-                    <Route exact path="/" component={Home} />
+                    <Route exact path="/" component={SignIn} />
                     <Route exact path="/register" component={Register} />
                     <Route exact path="/posts" component={Posts} />
                 </Switch>
