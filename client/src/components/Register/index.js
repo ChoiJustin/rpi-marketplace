@@ -10,12 +10,18 @@ const Register = () => {
     //Hooks that hold the current Username & Password
     const [user, setUsername] = useState('')
     const [pass, setPassword] = useState('')
+    const [register, setRegister] = useState(true)
 
     const history = useHistory()
 
     //Fetches the Current User from the Backend API when submit is clicked
     const handleSubmit = (e) => {
         e.preventDefault()
+
+        if (!user.includes('@rpi.edu')) {
+            setRegister(false)
+            return
+        }
 
         fetch('http://localhost:5000/api/users', {
             method: 'post',
@@ -50,6 +56,7 @@ const Register = () => {
             <img src={Logo} alt="" id={'Logo'} />
             <div className={'text'}> REGISTER INTO MARKETPLACE </div>
             <div>
+                {register === false && <div>Does not use an RPI email!</div>}
                 <Form className={'Register__Form'}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Control
